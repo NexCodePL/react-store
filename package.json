@@ -1,0 +1,38 @@
+{
+    "name": "@nexcodepl/react-store",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "repository": "https://github.com/NexCodePL/react-store.git",
+    "author": "Alexander Stefański <alex@nexcode.pl>",
+    "license": "MIT",
+    "type": "module",
+    "keywords": [
+        "nexcodepl",
+        "react-store",
+        "react",
+        "store"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "format": "yarn prettier --write \"src/**/*.ts\"",
+        "lint": "yarn eslint . --ext .ts",
+        "prepare": "yarn build",
+        "prepublishOnly": "yarn lint",
+        "preversion": "yarn lint",
+        "version": "yarn format && git add -A src",
+        "postversion": "git push && git push --tags",
+        "publish:npm": "npm publish --access public"
+    },
+    "dependencies": {
+        "react": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.31",
+        "@typescript-eslint/eslint-plugin": "^5.57.0",
+        "@typescript-eslint/parser": "^5.57.0",
+        "eslint": "^8.37.0",
+        "prettier": "^2.8.7",
+        "typescript": "^5.0.2"
+    }
+}
