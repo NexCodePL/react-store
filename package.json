@@ -1,6 +1,6 @@
 {
     "name": "@nexcodepl/react-store",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "main": "./dist/index.js",
     "typings": "./dist/index.d.ts",
     "repository": "https://github.com/NexCodePL/react-store.git",
@@ -34,5 +34,8 @@
         "eslint": "^8.37.0",
         "prettier": "^2.8.7",
         "typescript": "^5.0.2"
-    }
+    },
+    "files": [
+        "dist/**/*"
+    ]
 }
