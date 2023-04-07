@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { StoreDependencyList } from "./types.js";
 import { getDependencies } from "./utils.js";
 
